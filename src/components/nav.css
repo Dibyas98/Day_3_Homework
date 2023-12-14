@@ -1,0 +1,37 @@
+ul{
+    display: flex;
+    /* width: 80%; */
+    justify-content: space-between;
+    margin: 10px 20px;
+    /* border: 2px solid black; */
+    padding: 0;
+    
+    
+}
+li{
+    /* border: 2px solid black; */
+    width: 20%;
+    align-items: center;
+    line-height: 50px;
+    height: 50px;
+    list-style: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
+    background-color: #A5A19E;
+    overflow: hidden; /* Clip overflow */
+    white-space: nowrap; /* Prevent text from wrapping */
+    text-overflow: ellipsis;
+    
+}
+li:hover{
+    background-color: #991F48;
+}
+
+@media screen and (max-width:320px) {
+    li{
+        font-size: 0.5rem;
+    }
+}
