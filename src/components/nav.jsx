@@ -1,14 +1,14 @@
 import React from 'react'
 import './nav.css'
 
-function Nav(){
+function Nav(props){
     return(
-        <ul>
-            <li>home</li>
-            <li>about</li>
-            <li>services</li>
-            <li>faq</li>
-            <li>contact</li>
+        <ul >
+            <li className={`nav-${props.mode}`}>home</li>
+            <li className={`nav-${props.mode}`}>about</li>
+            <li className={`nav-${props.mode}`}>services</li>
+            <li className={`nav-${props.mode}`}>faq</li>
+            <li className={`nav-${props.mode}`}>contact</li>
         </ul>
         
     );
